@@ -1,0 +1,56 @@
+[
+    {
+       "id":1,
+       "name":"Rapid Fire",
+         "description":"Rapid fire round questions to ask short and sweet questions to know if interest is matching",
+         "duration":"10 min",
+         "category":"free",
+         "image":"https://img.freepik.com/free-vector/red-time-bomb-realistic-design_52683-14358.jpg?t=st=1717650065~exp=1717653665~hmac=03cf05152290771699bb1ef2bc53066071177b7b2b83662c6c8aefb261ae87b5&w=740"
+
+    },
+    {
+        "id":2,
+        "name":"Truth Dare",
+          "description":"Ask questions that you want to hear only direct answer ",
+          "duration":"5 min",
+          "category":"free",
+          "image":"https://img.freepik.com/free-photo/person-front-doors_23-2151112919.jpg?t=st=1717651166~exp=1717654766~hmac=bd50e90c69da46cb6e03ff8979815ec089d22e9e76149e7f3c81c560611e6751&w=996"
+ 
+     },
+     {
+        "id":3,
+        "name":"Music Vibe",
+          "description":"Know each other song style",
+          "duration":"unlimited",
+          "category":"free",
+          "image":"https://img.freepik.com/premium-psd/audio-elegance-pngready-isolation-stylish-headphones_68880-47294.jpg?w=740"
+ 
+     },
+     {
+        "id":4,
+        "name":"Meme Clash",
+          "description":"Know each ohter meme preference and shine your sesne of humor",
+          "duration":"unlimited",
+          "category":"paid",
+          "image":"https://img.freepik.com/free-vector/fun-versus-background_23-2147692282.jpg?t=st=1717651289~exp=1717654889~hmac=6430b54ec955292f921fad9e68fd40c3085391a875924104b3825cd1e7014a49&w=740"
+ 
+     },
+     {
+        "id":5,
+        "name":"Watchers and players",
+          "description":"Know each ohter series and sports  preference and get to know their taste and put a test to it",
+          "duration":"unlimited",
+          "category":"paid",
+          "image":"https://img.freepik.com/free-psd/3d-cinema-blank-banner-background_23-2150822410.jpg?t=st=1717651370~exp=1717654970~hmac=0f7b4083c37a3761a47f341063ed3a39493a8767869669ebbc2fd82c0661ec05&w=996"
+ 
+     },
+     {
+        "id":6,
+        "name":"Situations",
+          "description":"Put each other in different scenerios/situations to know how would they react and what would they do",
+          "duration":"unlimited",
+          "category":"paid",
+          "image":"https://img.freepik.com/free-photo/male-model-surrounded-by-hands-like-his-own-thoughts-dark-wall-young-man-doubts-can-t-choose-right-decision-concept-mental-problems-troubles-work-indecision_155003-28311.jpg?t=st=1717651414~exp=1717655014~hmac=22650b28608f07bf8959fbf3c933c624e5e8a87a22d45e51aed8d70c7eb9fe57&w=360"
+ 
+     }
+]
