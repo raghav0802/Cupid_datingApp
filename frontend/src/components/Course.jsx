@@ -1,8 +1,25 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Cards from '../components/Cards';
-import list from '../../public/list.json';
+
 import {Link} from "react-router-dom"
+import axios from "axios"
 function Course() {
+  const [game,setGame]=useState([])
+  useEffect(()=>{
+    const getGame=async()=>{
+      try {
+     
+        const res= await axios.get("http://localhost:4001/games")
+       
+        console.log(res.data)
+        
+        setGame(res.data)
+      } catch (error) {
+        console.log(error)
+      }
+    };
+    getGame();
+  },[]);
   return (
     <>
     <div className='max-w-screen-2x1 container mx-auto md:px-20 px-4'>
@@ -20,7 +37,7 @@ function Course() {
         </div>
         <div className='mt-12 grid grid-cols-1 md:grid-cols-3'>
             {
-               list.map((item)=>(
+               game.map((item)=>(
                 <Cards key={item.id} item={item} />
                )) 
             }

@@ -1,12 +1,31 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
  import Cards from './Cards';
-import list from '../../public/list.json'
+
+import axios from "axios"
 function Games() {
-    const filterData=list.filter((data)=>data.category==="free");
+  const [game,setGame]=useState([])
+  useEffect(()=>{
+    const getGame=async()=>{
+      try {
+     
+        const res= await axios.get("http://localhost:4001/games")
+    
+       
+       const data= res.data.filter((data)=>data.category==="free")
+       console.log(data)
+        setGame(data)
+      } catch (error) {
+        console.log(error)
+      }
+    };
+    getGame();
+  },[]);
+
+   
     // console.log(filterData);
   var settings = {
     dots: true,
@@ -55,7 +74,7 @@ function Games() {
     <div>
     <Slider {...settings}>
         
-      {filterData.map((item)=>{
+      {game.map((item)=>{
         <Cards item={item} key={item.id}/>
       })}
       </Slider>
